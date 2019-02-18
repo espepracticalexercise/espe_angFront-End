@@ -1,0 +1,42 @@
+<br />
+<div class="container">
+    <br />
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-4 col-md-4">
+          <a routerLink="/supervisor" class="btn btn-outline-info">Back</a>
+        </div>
+        <!-- <div class="col-md-auto"> -->
+        <div class="col-4 col-md-4">
+          <h3 class="text-center">Tabla de solicitudes</h3>
+        </div>
+        <div class="col-4 col-md-4 text-right">
+        </div>
+      </div>
+    </div>
+</div>
+<br>
+<div class="container table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Destino</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products; let i = index">
+        <th>{{ i + 1 }}</th>
+        <td>{{ p.first_name }} {{ p.last_name }}</td>
+        <td>{{ p.place_flight }}</td>
+        <td>{{ p.date_flight }}</td>
+        <td>{{ p.status_flight }}</td>
+        <td><a class="btn btn-outline-info">Editar</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
