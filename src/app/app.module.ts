@@ -8,13 +8,15 @@ import { AppRoutingModule } from "./app-routing.module";
 import { HomeComponent } from "./home/home.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { FormupdateComponent } from './formupdate/formupdate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListflightComponent,
     FormflightComponent,
-    HomeComponent
+    HomeComponent,
+    FormupdateComponent
   ],
   imports: [
     BrowserModule,

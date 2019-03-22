@@ -32,7 +32,7 @@ export class FormflightComponent implements OnInit {
   addProduct() {
     this.rest.addProduct(this.flight.value).subscribe(
       result => {
-        this.router.navigate(["/home"]);
+        this.router.navigate(["/supervisor"]);
       },
       err => {
         console.log(this.flight);

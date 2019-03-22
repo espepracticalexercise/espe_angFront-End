@@ -45,7 +45,7 @@ export class RestService {
 
   updateProduct(id, product): Observable<any> {
     return this.http
-      .put(endpoint + "products/" + id, JSON.stringify(product), httpOptions)
+      .put(endpoint + "update", JSON.stringify(product), httpOptions)
       .pipe(
         tap(_ => console.log(`updated product id=${id}`)),
         catchError(this.handleError<any>("updateProduct"))

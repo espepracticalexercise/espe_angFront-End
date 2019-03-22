@@ -1,0 +1,18 @@
+<div>
+  <h2>Product Edit</h2>
+  <div>
+    <label>Product Name:
+      <input [(ngModel)]="flightdata.first_name" placeholder="Name" />
+    </label><br>
+    <label>Product Desc:
+      <input [(ngModel)]="flightdata.last_name" placeholder="Product last_name" />
+    </label><br>
+    <label>Product Price:
+      <input [(ngModel)]="flightdata.place_flight" placeholder="Product place_flight" />
+    </label><br>
+    <label>Product Price:
+      <input [(ngModel)]="flightdata.date_flight" placeholder="Product date_flight" />
+    </label><br>
+  </div>
+  <button (click)="updateProduct()">Update</button>
+</div>
